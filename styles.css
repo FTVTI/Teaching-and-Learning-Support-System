@@ -5,6 +5,12 @@ body {
   background-color: #f4f4f4; 
 }
 
+.responsive-img {
+  max-width: 100%; /* Ensures it scales within its container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes extra space below the image */
+  margin: auto; 
+}
 .advisors {
   margin-top: 20px;
 }
