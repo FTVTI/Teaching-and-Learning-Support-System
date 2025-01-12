@@ -88,9 +88,10 @@ body {
 .search-box {
   background: white;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 .search-box input {
   border: none;
