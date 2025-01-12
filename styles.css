@@ -136,20 +136,20 @@ body {
       width: 100%;
   }
 }
- @media (max-width: 768px) {
-            .search-box {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-top: 10px;
-            }
-            .search-box input {
-                width: 80%;
-                padding: 8px;
-                font-size: 16px;
-            }
-            .search-box button {
-                padding: 8px 12px;
-                font-size: 16px;
-            }
-        }
+@media (max-width: 768px) {
+  .search-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  .search-box input {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+  }
+  .search-box button {
+      padding: 8px 12px;
+      font-size: 16px;
+  }
+}
