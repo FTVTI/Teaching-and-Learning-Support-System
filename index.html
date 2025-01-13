@@ -10,21 +10,30 @@
     <div class="sidebar">
         <button class="close-btn">✕</button>
         <h2>LearnHub</h2>
+       
         <a href="#dashboard">Dashboard</a>
-        <a href="#my-courses">My Courses</a>
+        <div class="dropdown">
+            <button class="dropdown-btn">My Courses ▼</button>
+            <div class="dropdown-content">
+                <a href="#course1">HTML & CSS Basics</a>
+                <a href="#course2">JavaScript Essentials</a>
+                <a href="#course3">Python for Beginners</a>
+                <a href="#course4">React Basics</a>
+            </div>
+        </div>
         <a href="#about">About</a>
         <a href="#contact">Contact Us</a>
         <a href="#logout">Logout</a>
         <div class="search-box">
-                <input type="text" placeholder="Search courses...">
-                <button>🔍</button>
+            <input type="text" id="search-input" placeholder="Search courses...">
+            <button id="search-button">🔍</button>
         </div>
     </div>
     <div class="main-content">
         <div class="navbar">
             <button class="hamburger">☰</button>
             <h1>Dashboard</h1>
-            
+        
         </div>
         <div class="dashboard-section" id="my-courses">
             <h2>My Courses</h2>
@@ -108,6 +117,11 @@
                 }
             });
         });
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+    document.querySelector('.dropdown').classList.toggle('active');
+});
+
     </script>
 </body>
 </html>
+
