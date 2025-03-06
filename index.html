@@ -33,20 +33,122 @@
 
   <main class="main">
 
+    
+
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
       <img src="https://media.istockphoto.com/id/1132102700/photo/smiling-african-ethnicity-student-in-the-library.jpg?s=612x612&w=0&k=20&c=_FjFG2NxdbEIANSRTlfWaErdaoL_EdNUWxoJ7zatEoU=" alt="" data-aos="fade-in">
 
       <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Learn. Download. Master.</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Get instant access to high-quality courses in programming, design, AI, and more. Download course materials, enhance your skills, and stay ahead in the digital world.</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">Teaching and learning support system.</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Empowering Education Through Technology. Our Teaching & Learning Support System provides an interactive platform for students and teachers to enhance education in FTEVTI.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="course.html" target="_blank" class="btn-get-started">Sign Up</a>
+          <a href="#" onclick="openSignupModal()" class="btn-get-started">Sign Up</a>
         </div>
       </div>
 
+      <!-- Popup Modal -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 style="margin-bottom: 20px; color: #333;">Sign Up or Login</h2>
+      <form id="signupForm" action="signup.php" method="POST">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <select name="role" id="role" required>
+              <option value="user">User</option>
+              <option value="teacher">Teacher</option>
+          </select>
+          <button type="submit">Sign Up</button>
+      </form>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ddd;">
+      <form id="loginForm" action="login.php" method="POST">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+      </form>
+  </div>
+</div>
+
     </section><!-- /Hero Section -->
+
+     <!-- Features Section -->
+    
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Courses</h2>
+        <p>Popular Courses</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="course-item">
+              <img src="assets/img/Web Images/Intro To AI IMG.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <p class="category"><a href="course.html" style="color: white;" download target="_blank">I C T</a></p>
+                </div>
+
+                <p class="description">Covers machine learning, neural networks, and problem-solving techniques in artificial intelligence for automation and decision-making systems.</p>
+               
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="course-item">
+              <img src="assets/img/Web Images/Web Design and Deveopment img.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                 <p class="category"><a href="course.html" style="color: white;" target="_blank">ELECTRICAL</a></p>
+                </div>
+
+                <p class="description">Introduces HTML, CSS, and JavaScript for building responsive and visually appealing websites.</p>
+                
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="course-item">
+              <img src="assets/img/Web Images/windows programming.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <p class="category"><a href="course.html" style="color: white;" target="_blank">AUTOMOTIVE</a></p>
+                </div>
+
+                <p class="description">Learn to develop Windows applications using programming languages like C# and .NET, covering GUI design, event handling, and file management for efficient software development.</p>
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="course-item">
+              <img src="assets/img/Web Images/windows programming.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <p class="category"><a href="course.html" style="color: white;" target="_blank">BUILDING CONSTRACTION</a></p>
+                </div>
+
+                <p class="description">Learn to develop Windows applications using programming languages like C# and .NET, covering GUI design, event handling, and file management for efficient software development.</p>
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Courses Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -135,68 +237,7 @@
 
     </section><!-- /Why Us Section -->
 
-    <!-- Features Section -->
-    
-
-    <!-- Courses Section -->
-    <section id="courses" class="courses section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Courses</h2>
-        <p>Popular Courses</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="course-item">
-              <img src="assets/img/Web Images/Intro To AI IMG.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category"><a href="assets/files/Introduction to AI.pdf" style="color: white;" download target="_blank">Introduction to AI</a></p>
-                </div>
-
-                <p class="description">Covers machine learning, neural networks, and problem-solving techniques in artificial intelligence for automation and decision-making systems.</p>
-               
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="course-item">
-              <img src="assets/img/Web Images/Web Design and Deveopment img.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                 <p class="category"><a href="assets/files/Web Design And Development 1.pdf" style="color: white;" download target="_blank">Web Development</a></p>
-                </div>
-
-                <p class="description">Introduces HTML, CSS, and JavaScript for building responsive and visually appealing websites.</p>
-                
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="course-item">
-              <img src="assets/img/Web Images/windows programming.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category"><a href="assets/files/Windows Programming.pdf" style="color: white;" download target="_blank">Windows Programming</a></p>
-                </div>
-
-                <p class="description">Learn to develop Windows applications using programming languages like C# and .NET, covering GUI design, event handling, and file management for efficient software development.</p>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Courses Section -->
+   
 
     
 
@@ -229,6 +270,28 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    // Function to open the signup modal
+function openSignupModal() {
+    const modal = document.getElementById("popupModal");
+    modal.style.display = "block";
+}
+
+// Close modal when close button is clicked
+const closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+    const modal = document.getElementById("popupModal");
+    modal.style.display = "none";
+};
+
+// Close modal when clicking outside the modal
+window.onclick = function(event) {
+    const modal = document.getElementById("popupModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+  </script>
 
 </body>
 
